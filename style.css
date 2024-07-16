@@ -1,3 +1,4 @@
+
 /* Reset de estilos básicos */
 * {
     margin: 0;
@@ -8,29 +9,34 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #520707e3;
+    background-color: #690101e3;
+    background-image: url(imagem/cultos.jpeg); background-size: cover; background-position: center;">
+  
+    
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5 auto;
     padding: 20px;
+    color: #fffdfd;
   
 }
 
 header {
     background-color: #520707e3;
-    color: #cf610e;
+    color: #fafafa;
     padding: 10px 10;
     display: center;
+
+
     
-}
+}    
 
 p {
     margin: 20px;
     display: inline-block;
-    
-    
+   
     
 }
 
@@ -48,38 +54,44 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #cf610e;
+    color: #0a0a0a;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px; 
+   
 }
 
 nav ul li a:hover {
-    background-color: #ffffff;
+    background-color: #f5f1f1;
 }
 
 .section {
     padding: 40px 0;
     background-color: #9e9191;
-    text-align: center;
+    text-align: center; 
+
+    
+   
   
 }
 
 .event {
-    background-color: #e1f0ee;
+    background-color: #d16813;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(231, 223, 223, 0.99);
-
+   color: #000000;
+    box-shadow: 0 0 10px #520707e3;(219, 33, 33, 0.99);
 }
+
 
 footer {
     background-color: #484343;
-    color: #fff;
+    color: #f9f3f3;
     text-align: center;
     padding: 10px 0;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
 
