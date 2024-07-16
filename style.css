@@ -20,6 +20,7 @@ body {
     margin: 5 auto;
     padding: 20px;
     color: #fffdfd;
+   
   
 }
 
@@ -80,7 +81,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     border-radius: 5px;
    color: #000000;
-    box-shadow: 0 0 10px #520707e3;(219, 33, 33, 0.99);
+    box-shadow: 0 0 10px #dc2800e3;(219, 33, 33, 0.99);
 }
 
 
