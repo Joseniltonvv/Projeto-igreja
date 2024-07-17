@@ -72,13 +72,13 @@ nav ul li a:hover {
 
 }
 
-.event {
-    background-color: #d16813;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+.button {
+    background-color: #f0ece9;
+    padding: 8px;
+    margin-bottom: 8px;
+   text-decoration: none;
    color: #000000;
-    box-shadow: 0 0 10px #dc2800e3;(219, 33, 33, 0.99);
+    box-shadow: 0 0 10px #d16404;(219, 33, 33, 0.99);
 }
 
 
