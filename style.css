@@ -43,6 +43,7 @@ header {
     text-align: center;
     font-size: larger;
     width: 350px;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -80,7 +81,7 @@ nav ul li a:hover {
     background-color: #fdf5f5;
     width: 60px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 10px;
     font-weight: 66;
     padding: 10.5px 0;
