@@ -42,8 +42,9 @@ header {
     display: center;
     text-align: center;
     font-size: larger;
-    width: 350px;
-    border-radius: 10px;
+    width: 250px;
+    height: 45px;
+    border-radius: 15px;
 }
 
 nav ul {
