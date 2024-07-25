@@ -19,6 +19,19 @@
     display: inline-block; /* Permite que as imagens fiquem lado a lado */
     margin-right: 10px; /* Espaçamento entre as imagens (opcional) */
   }
+
+  .scrolling-wrapper {
+    display: inline-flex; /* Alinha as imagens em linha para rolagem */
+    animation: scroll 15s linear infinite; /* Animação contínua de rolagem */
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Move as imagens para fora do container */
+    }
+  }
     </style>
 </head>
 
@@ -76,13 +89,17 @@
         <img src="imagem/l.jpeg" width="385" height="50"> <br> <hr>
 
         <div class="image-gallery" id="image-gallery">
-            <!-- Aqui serão adicionadas as imagens dinamicamente via JavaScript -->
+            <div class="scrolling-wrapper" id="scrolling-wrapper">
+                <!-- As imagens serão adicionadas aqui dinamicamente -->
+                  <!-- Aqui serão adicionadas as imagens dinamicamente via JavaScript -->
             <img src="imagem/ag.jpeg" width= "300" height="500" alt="Imagem 1">
             <img src="imagem/c.jpeg" width= "300" height="500" alt="Imagem 2"> 
             <img src="imagem/s.jpeg" width= "300" height="500" alt="Imagem 3">
             <img src="imagem/pr.jpeg" width= "300" height="500" alt="Imagem 4">
             <img src="imagem/rv.jpeg" width= "300" height="500" alt="Imagem 5">
             <img src="imagem/va.jpeg" width= "300" height="500" alt="Imagem 6">
+              </div>
+           
          
             <!-- Adicione quantas imagens você precisar -->
           </div>

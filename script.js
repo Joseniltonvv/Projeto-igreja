@@ -14,14 +14,21 @@ const images = [
 const uniqueImageUrls = [...new Set(imageUrls)];
 
 // Seleciona o container da galeria
-const galleryContainer = document.getElementById('image-gallery');
+const scrollingWrapper = document.getElementById('scrolling-wrapper');
 
 // Adiciona cada imagem ao container
 uniqueImageUrls.forEach(imageUrl => {
   const imgElement = document.createElement('img');
   imgElement.src = imageUrl;
   imgElement.alt = 'Imagem';
-  galleryContainer.appendChild(imgElement);
-    
-  });
+  scrollingWrapper.appendChild(imgElement);
+});
+
+// Adiciona imagens novamente para criar um efeito de rolagem contínua
+uniqueImageUrls.forEach(imageUrl => {
+  const imgElement = document.createElement('img');
+  imgElement.src = imageUrl;
+  imgElement.alt = 'Imagem';
+  scrollingWrapper.appendChild(imgElement);
+});
   
