@@ -1,9 +1,10 @@
 // Lista de URLs das imagens (substitua com suas próprias imagens)
 const images = [
-    'imagem/1.jpeg',
-    'imagem/10.jpeg',
-    'imagem/3.jpeg',
-    'imagem/7.jpeg',
+    'imagem/ag.jpeg',
+    'imagem/c.jpeg',
+    'imagem/s.jpeg',
+    'imagem/pr.jpeg',
+    'imagem/rv.jpeg',
     
   ];
   
