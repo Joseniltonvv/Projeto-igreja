@@ -79,16 +79,17 @@ nav ul li a:hover {
 }
 
 .button {
-  
+    background-color: #fdf5f5;
     width: 60px;
     text-align: center;
     border-radius: 10px;
     font-size: 10px;
     font-weight: 66;
     padding: 10.5px 0;
-    
-   
-   
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-color: #050505;
     background-image: url(imagem/botao.jpeg);
     
 }
