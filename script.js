@@ -10,15 +10,18 @@ const images = [
     
   ];
   
-  // Seleciona o container da galeria
-  const galleryContainer = document.getElementById('image-gallery');
-  
-  // Adiciona cada imagem ao container
-  images.forEach(imageUrl => {
-    const imgElement = document.createElement('img');
-    imgElement.src = imageUrl;
-    imgElement.alt = 'Imagem';
-    galleryContainer.appendChild(imgElement);
+  // Remove URLs duplicadas
+const uniqueImageUrls = [...new Set(imageUrls)];
+
+// Seleciona o container da galeria
+const galleryContainer = document.getElementById('image-gallery');
+
+// Adiciona cada imagem ao container
+uniqueImageUrls.forEach(imageUrl => {
+  const imgElement = document.createElement('img');
+  imgElement.src = imageUrl;
+  imgElement.alt = 'Imagem';
+  galleryContainer.appendChild(imgElement);
     
   });
   
