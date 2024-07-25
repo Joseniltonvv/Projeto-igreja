@@ -1,11 +1,11 @@
 // Lista de URLs das imagens (substitua com suas próprias imagens)
-const images = [
-    'imagem/va.jpeg',
+const images = [ 
     'imagem/ag.jpeg',
     'imagem/c.jpeg',
     'imagem/s.jpeg',
     'imagem/pr.jpeg',
     'imagem/rv.jpeg',
+    'imagem/va.jpeg',
    
     
   ];
