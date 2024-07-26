@@ -39,7 +39,7 @@ uniqueImageUrls.forEach(imageUrl => {
 });
   
 // Inicialize o EmailJS com seu User ID
-emailjs.init('P8b7RfrI5UTiRNQKG');
+emailjs.init('ccL1GweldbY_h9zrOeXu5');
 
 // Adicione um ouvinte de eventos ao botão
 document.getElementById('send-button').addEventListener('click', function() {
