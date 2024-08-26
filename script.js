@@ -39,3 +39,13 @@ uniqueImageUrls.forEach(imageUrl => {
   scrollingWrapper.appendChild(imgElement);
 });
   
+const musica = document.getElementById('musica-automatica');
+
+// Exemplo de como pausar e retomar a música com um clique
+document.getElementById('imagem-pausa').addEventListener('click', () => {
+    if (musica.paused) {
+        musica.play();
+    } else {
+        musica.pause();
+    }
+});
