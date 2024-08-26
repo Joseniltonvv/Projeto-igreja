@@ -46,9 +46,9 @@ document.getElementById('imagem-pausa').addEventListener('click', () => {
   }
 });
 
-document.getElementById('subscribe-btn').addEventListener('click', function() {
-  console.log("Botão de inscrição clicado"); // Verifique se isso aparece no console
+document.getElementById('subscribe-now').addEventListener('click', function() {
   OneSignal.push(function() {
-    OneSignal.showNativePrompt();
+    OneSignal.showNativePrompt(); // Solicita permissão de notificações ao clicar no botão
   });
 });
+
