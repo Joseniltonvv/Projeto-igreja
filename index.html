@@ -41,6 +41,20 @@
     }
 
   }
+  #blinkingText {
+      font-size: 25px;
+      font-weight: bold;
+      color: #f7f0f0;
+      animation: blink 1s infinite; /* Animação de piscando */
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; } /* Visível no início e no fim */
+      50% { opacity: 0; } /* Invisível no meio */
+    }
+  
+  
+
     </style>
 
 <style>
@@ -63,7 +77,7 @@
               color: green;
           }
   
-  
+         
   
   </style>
 </head>
@@ -109,21 +123,21 @@
         </div>        
             <img src="imagem/l.jpeg" width="385" height="50"> <br> <hr>
                <div class="image-gallery" id="image-gallery">
-           <div class="scrolling-wrapper" id="scrolling-wrapper">
+           <div class="scrolling-wrapper" id="scrollingwrapper">
                 <!-- As imagens serão adicionadas aqui dinamicamente -->
                 <!-- Aqui serão adicionadas as imagens dinamicamente via JavaScript -->
            <hr>
-            <img src="imagem/cm.jpeg" width= "300" height="500" alt="Imagem 4">           
-            <img src="imagem/prv.jpeg" width= "300" height="500" alt="Imagem 6"> 
-            <img src="imagem/tt.jpeg" width= "300" height="500" alt="Imagem 5">
-            <img src="imagem/rv.jpeg" width= "300" height="500" alt="Imagem 6"> 
+          
+           <img src="imagem/bp.jpeg" width= "300" height="500" alt="Imagem 6"> 
+           <img src="imagem/vanlee.jpeg" width= "300" height="500" alt="Imagem 6"> 
+            <img src="imagem/revisao2.jpeg" width= "300" height="500" alt="Imagem 6"> 
 
            <hr>
               </div> <br> <hr>  
                    <div  class="roda" id="form-container"> <br>
                    
-                      <br>   <CENTER> <h3>Nossa Equipe no ARENA GRITO!</h3> </CENTER> <br>
-                     <center>       <iframe width="300" height="300" src="video/grito.mp4" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center> <br>
+                      <br>   <CENTER> <div id="blinkingText"><h3>Recado para você!</h3></div> </CENTER> <br>
+                     <center>       <iframe width="300" height="172" src="video/rv.mp4" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center> <br>
                     </div>
                     
             <!--Digite seu pedido de oração aqui... Adicione quantas imagens você precisar -->
@@ -150,5 +164,8 @@
      </div>
          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
            <script src="script.js"></script>
+    
+         
+
 </body>
 </html>
