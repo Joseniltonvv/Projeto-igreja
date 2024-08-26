@@ -46,33 +46,11 @@ document.getElementById('imagem-pausa').addEventListener('click', () => {
   }
 });
 
-if ("Notification" in window) {
-  Notification.requestPermission().then(permission => {
-      if (permission === "granted") {
-          new Notification("Notificações ativadas!");
-      }
+OneSignal.push(function() {
+  OneSignal.init({
+    appId: "b848de96-40c2-4f7b-a92c-f74b7673a3d4",
   });
-}
 
-function enviarNotificacao(titulo, corpo) {
-  if (Notification.permission === "granted") {
-      new Notification(titulo, {
-          body: corpo,
-          icon: 'icon.jpeg' // Opcional: ícone para a notificação
-      });
-  }
-}
-
-// Exemplo de uso
-enviarNotificacao("Evento Importante!", "Não perca nosso próximo evento na igreja.");
-
-function mostrarNotificacao() {
-  document.getElementById("notificacao").style.display = "block";
-}
-
-function fecharNotificacao() {
-  document.getElementById("notificacao").style.display = "none";
-}
-
-// Exemplo de uso: Mostrar a notificação após 3 segundos
-setTimeout(mostrarNotificacao, 3000);
+  // Solicita permissão automática
+  OneSignal.showNativePrompt();
+});

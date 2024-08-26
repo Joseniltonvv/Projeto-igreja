@@ -85,10 +85,7 @@
   
 
     <header>
-      <div id="notificacao" class="notificacao">
-        <span>Este é um alerta de notificação!</span>
-        <button onclick="fecharNotificacao()">Fechar</button>
-    </div>
+    
     
         <div class="container">  <hr>
                     <center> <h2>Olá, equipe ATOS!</h2> </center> 
@@ -176,7 +173,19 @@
          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
            <script src="script.js"></script>
     
-         
+           <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+           <script>
+             window.OneSignalDeferred = window.OneSignalDeferred || [];
+             OneSignalDeferred.push(async function(OneSignal) {
+               await OneSignal.init({
+                 appId: "b848de96-40c2-4f7b-a92c-f74b7673a3d4",
+                 safari_web_id: "web.onesignal.auto.2b467c5d-2ccd-4e09-a57b-cb7ab9efd0c0",
+                 notifyButton: {
+                   enable: true,
+                 },
+               });
+             });
+           </script>
 
 </body>
 </html>
