@@ -82,10 +82,11 @@
 
 <body>
 
-  
+  <button id="subscribe-btn">Inscreva-se para Notificações</button>
 
     <header>
-    
+      
+
     
         <div class="container">  <hr>
                     <center> <h2>Olá, equipe ATOS!</h2> </center> 
@@ -173,19 +174,27 @@
          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
            <script src="script.js"></script>
     
-           <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-           <script>
-             window.OneSignalDeferred = window.OneSignalDeferred || [];
-             OneSignalDeferred.push(async function(OneSignal) {
-               await OneSignal.init({
-                 appId: "b848de96-40c2-4f7b-a92c-f74b7673a3d4",
-                 safari_web_id: "web.onesignal.auto.2b467c5d-2ccd-4e09-a57b-cb7ab9efd0c0",
-                 notifyButton: {
-                   enable: true,
-                 },
-               });
-             });
-           </script>
+
+ <!-- Script do OneSignal -->
+ <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+ <script>
+   window.OneSignal = window.OneSignal || [];
+   OneSignal.push(function() {
+     OneSignal.init({
+       appId: "SSb848de96-40c2-4f7b-a92c-f74b7673a3d4", // Substitua pelo seu App ID do OneSignal
+     });
+   });
+ </script>
+
+ <!-- Script para solicitar a inscrição ao clicar no botão -->
+ <script>
+   document.getElementById('subscribe-btn').addEventListener('click', function() {
+     OneSignal.push(function() {
+       OneSignal.showNativePrompt(); // Exibe o prompt nativo de notificação
+     });
+   });
+ </script>
+
 
 </body>
 </html>

@@ -46,11 +46,3 @@ document.getElementById('imagem-pausa').addEventListener('click', () => {
   }
 });
 
-OneSignal.push(function() {
-  OneSignal.init({
-    appId: "b848de96-40c2-4f7b-a92c-f74b7673a3d4",
-  });
-
-  // Solicita permissão automática
-  OneSignal.showNativePrompt();
-});
