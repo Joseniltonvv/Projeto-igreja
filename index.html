@@ -174,36 +174,7 @@
          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
            <script src="script.js"></script>
     
-           <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-           <script>
-             window.OneSignal = window.OneSignal || [];
-             OneSignal.push(function() {
-               OneSignal.init({
-                 appId: "b848de96-40c2-4f7b-a92c-f74b7673a3d4", // Substitua pelo seu App ID do OneSignal
-               });
-             });
-           </script>
-<script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "b848de96-40c2-4f7b-a92c-f74b7673a3d4", // Substitua pelo seu App ID do OneSignal
-    });
-
-    // Solicita a permissão de notificações diretamente
-    OneSignal.showNativePrompt();
-  });
-</script>
-<button id="subscribe-now">Receber Notificações</button>
-
-<script>
-  document.getElementById('subscribe-now').addEventListener('click', function() {
-    OneSignal.push(function() {
-      OneSignal.showNativePrompt(); // Solicita permissão de notificações ao clicar no botão
-    });
-  });
-</script>
-           
+  
 
 
 </body>
