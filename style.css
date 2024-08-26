@@ -117,3 +117,24 @@ background-color: #5b1212;
 
 
 }
+
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f0ad4e;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente oculta */
+}
+
+.notificacao button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+}
