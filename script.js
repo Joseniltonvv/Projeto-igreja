@@ -47,6 +47,10 @@ document.getElementById('imagem-pausa').addEventListener('click', () => {
 });
 
 
+document.getElementById('startButton').addEventListener('click', function() {
+  document.querySelector('.welcome-screen').classList.add('hidden');
+  document.getElementById('mainScreen').classList.remove('hidden');
+});
 
 
 

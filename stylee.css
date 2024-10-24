@@ -87,3 +87,18 @@ nav ul li a:hover {
         margin: 10px 0; /* Espaçamento vertical entre os links */
     }
 }
+/* Animação do título */
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#welcomeTitle {
+    animation: drop 0.8s ease forwards; /* Aplique a animação ao título */
+}
