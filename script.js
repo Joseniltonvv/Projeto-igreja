@@ -54,3 +54,23 @@ document.getElementById('startButton').addEventListener('click', function() {
 
 
 
+let currentIndex = 0;
+let images = document.querySelectorAll('.carousel img');
+images[currentIndex].classList.add('active');
+
+function toggleCarousel() {
+    if (interval) {
+        clearInterval(interval);
+        interval = null;
+    } else {
+        interval = setInterval(nextImage, 3000);
+    }
+}
+
+let interval = setInterval(nextImage, 3000);
+
+function nextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+}
