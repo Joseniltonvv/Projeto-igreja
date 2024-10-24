@@ -1,186 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Atos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icon.jpeg" type="icon.jpeg">
-    <link rel="stylesheet" href="script.js">
-
-    
-    <style>
-          .image-gallery {
-    overflow-x: auto; /* Permite a rolagem horizontal */
-    white-space: nowrap; /* Evita que as imagens quebrem linha */
-    -webkit-overflow-scrolling: touch; /* Adiciona suporte a scroll suave em dispositivos iOS */
- 
-  }
-  
-  .image-gallery img {
-    max-width: 170px; /* Garante que as imagens se ajustem ao tamanho do container */
-    height: 270px;
-    display: inline-flex; /* Permite que as imagens fiquem lado a lado */
-    margin-right: 10px; /* Espaçamento entre as imagens (opcional) */
-    object-fit: cover;
-  }
-
-  .scrolling-wrapper {
-    display: inline-flex; /* Alinha as imagens em linha para rolagem */
-    animation: scroll 20s linear infinite; /* Animação contínua de rolagem */
-    
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%); /* Move as imagens para fora do container */
-      
-    }
-
-  }
-  #blinkingText {
-      font-size: 25px;
-      font-weight: bold;
-      color: #f7f0f0;
-      animation: blink 1s infinite; /* Animação de piscando */
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; } /* Visível no início e no fim */
-      50% { opacity: 0; } /* Invisível no meio */
-    }
-  
-    </style>
-
-<style>
-
-  
-          #send-button {
-              background-color: #007bff;
-              color: white;
-              padding: 10px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              font-size: 16px;
-          }
-          #send-button:hover {
-              background-color: #0056b3;
-          }
-          #response-message {
-              margin-top: 10px;
-              color: green;
-          }
-  
-         
-  
-  </style>
+    <title>Bem-vindo ao Aplicativo</title>
+    <link rel="stylesheet" href="stylee.css">
 </head>
-
 <body>
+    <div class="welcome-screen">
+        <h1>Bem-vindo ao App ATOS!</h1>
+        <B>Estamos felizes em tê-lo aqui.</B> <HR>
+        <button>
 
-  
+            <strong>
+                <a href="inicio1.html" style="text-decoration:none; color: white;">ENTRAR</a>
+            </strong>
 
-    <header>
+        </button>
+    </div>
     
-
-    
-        <div class="container">  <hr>
-                    <center> <h2>Olá, equipe ATOS!</h2> </center> 
-                     <nav>
-                  <ul>
-                    <center> 
-                            <button style="color: black;" class="button">
-                                    <strong>
-                                         <a target="_blank" href="https://circuitodavisao.com/" style="text-decoration:none; color: white;">CIRCUITO</a>
-                                 </strong>
-                             </button>
-                          <button style="color: black;" class="button">
-                     <strong>
-               <a href="celula.html" style="text-decoration:none; color: white;">CÉLULAS</a>
-                         </strong>
-                               </button>
-                                        <button style="color: black;" class="button">
-                                    <strong>
-                             <a target="_blank" href="https://iv.circuitodavisao.com/student-space" style="text-decoration:none; color: white;">ALUNOS IV</a>
-                       </strong>
-                </button>                       
-                       <button style="color: black;"  class="button">
-                           <strong>
-                               <a href="saraapp.html" style="text-decoration:none; color: white;">CHURCH</a>
-                                  </strong>
-                            </button>
-                        <button style="color: black;" class="button">
-                  <strong>
-                
-                      <a href="xp.html" style="text-decoration:none; color: white;">ARENA XP</a>
-                 </strong>  
-            </button>
-                   </center>
-                 </ul>
-           </nav>
-           
-    <center>    </div>        
-            <img src="imagem/p1.jpeg" width="385" height="50"> <br> <hr>
-               <div class="image-gallery" id="image-gallery">
-           <div class="scrolling-wrapper" id="scrolling-wrapper"> 
-     
-     
-           
-                <!-- As imagens serão adicionadas aqui dinamicamente -->
-                <!-- Aqui serão adicionadas as imagens dinamicamente via JavaScript -->
-           <hr>
-          
-           <img src="imagem/arenagrito.jpeg" width= "300" height="650" alt="Imagem 6"> 
-           <img src="imagem/pos.jpeg" width= "300" height="650" alt="Imagem 6"> 
-           <img src="imagem/cem.jpeg" width= "300" height="650" alt="Imagem 6"> 
-            <img src="imagem/m.jpeg" width= "300" height="500" alt="Imagem 6"> 
-            <img src="imagem/ev4.jpeg" width= "300" height="650" alt="Imagem 6"> 
-            <img src="imagem/arenagrito.jpeg" width= "300" height="650" alt="Imagem 6"> 
-            <img src="imagem/pos.jpeg" width= "300" height="650" alt="Imagem 6"> 
-            <img src="imagem/cem.jpeg" width= "300" height="650" alt="Imagem 6"> 
-             <img src="imagem/m.jpeg" width= "300" height="500" alt="Imagem 6"> 
-             <img src="imagem/ev4.jpeg" width= "300" height="650" alt="Imagem 6"> 
- 
-            <hr>
-              </div> <br> <hr>   <center><p>Clique na imagem para pausar/retomar a rolagem.</p></center>
-                   <div  class="roda" id="form-container"> <br>
-                   
-                      <br>   <CENTER> <div id="blinkingText"> <b> <h3 class="aviso">🚨🚨🚨</h3> </b> </div> </CENTER> <br>
-                     <center>      
-                       <iframe width="300" height="172" src="video/cem.mp4" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </center> <br>
-                     <center><p class="descricao">Para mais informações sobre o <br> REVISÃO DE VIDAS, consulte o seu lider.</p></center>
-                    </div>
-                    
-            <!--Digite seu pedido de oração aqui... Adicione quantas imagens você precisar -->
-               </div>
-           <br>
-
-              <img src="imagem/cultos.jpeg" width="385" height="500"> <br> <hr>                
-              <center>  
-<div class="roda">
-              <h1> PEDIDO DE ORAÇÃO</h1> 
-              🤲🏻<BR>
-                <button id="send-button"> <a target="_blank" href="https://wa.me/61992192854" style="text-decoration:none; color: white;">Enviar Pedido</button> <br>        
-          <br> 
-        </div> </center>
-       
-              </header>
-    <hr> <br>
-           <center> <a  target="_blank" href="https://www.instagram.com/equipe_atos_?igsh=MTl1MW9mcTJza25naA=="> <img src="imagem/ig.jpeg" style="max-width: 95px; max-height: 95px;"> </a> </center> 
-       <div class="container">
-
-            <center> 
-                <p>&copy; 2024 Equipe Atos. Todos os direitos reservados.</p>
-          </center> 
-     </div>
-         <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-           <script src="script.js"></script>
-    
-  
-
-
 </body>
 </html>
