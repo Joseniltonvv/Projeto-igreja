@@ -47,3 +47,6 @@ document.getElementById('imagem-pausa').addEventListener('click', () => {
 });
 
 
+
+
+
