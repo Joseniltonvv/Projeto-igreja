@@ -165,12 +165,7 @@ background-color: #000000;
         border-radius: 8px;
     }
 
-    @media (max-width: 768px) {
-        /* Navegação flexível */
-        nav ul {
-            flex-direction: column;
-            padding: 0;
-        }
+    
     
         nav ul li {
             margin: 10px 0;
@@ -219,5 +214,5 @@ background-color: #000000;
             padding: 12px;
             font-size: 18px;
         }
-    }
+    
     
