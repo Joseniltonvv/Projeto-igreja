@@ -92,15 +92,28 @@ nav ul li a:hover {
 
 .botao {
     display: inline-block;
-    padding: 10px 10px;
+    padding: 10px 20px;
     background-color: #e3a319; /* Cor de fundo */
-    color: white; /* Cor do texto */
+    color: rgb(255, 255, 255); /* Cor do texto */
     text-align: center;
     text-decoration: none; /* Remove o sublinhado */
     border-radius: 25px; /* Bordas arredondadas */
-    transition: background-color 0.3s; /* Efeito de transição */
+    transition: transform 0.1s, background-color 0.3s; /* Transições */
+    animation: piscar 2s infinite; /* Animação de piscar */
 }
 
-.botao:hover {
-    background-color: #131313; /* Cor de fundo ao passar o mouse */
+.botao:active {
+    transform: scale(0.95); /* Reduz o tamanho ao clicar */
+    background-color: #000000; /* Cor de fundo ao pressionar */
+    animation: none; /* Remove a animação ao clicar */
 }
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0.5; /* Semi-transparente */
+    }
+}
+
