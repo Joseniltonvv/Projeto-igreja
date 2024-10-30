@@ -25,19 +25,6 @@ body {
     margin: 20px 0;
 }
 
-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #e3a319;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    src: url(index.html);
-}
-
-button:hover {
-    background-color: #0056b3;
-}
 
 .main-screen {
     display: none;
@@ -103,7 +90,17 @@ nav ul li a:hover {
     animation: drop 0.8s ease forwards; /* Aplique a animação ao título */
 }
 
-.linha {
+.botao {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #e3a319; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
 
-
+.botao:hover {
+    background-color: #131313; /* Cor de fundo ao passar o mouse */
 }
