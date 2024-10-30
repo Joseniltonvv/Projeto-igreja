@@ -14,6 +14,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            background: #fafafa;
         }
         .menu {
             display: flex;
@@ -23,7 +24,7 @@
         }
         .menu a {
             margin: 1px;
-            padding: 10px 15px;
+            padding: 10px 5px;
             background-color: #8b0a0a;
             color: white;
             text-decoration: none;
@@ -63,9 +64,9 @@
             margin: 20px 0;
         }
         .culto-info img {
-            width: 500px;
-            
-            height: 300px;
+          width: 300px;
+            max-width: 400px; /* Limite máximo para o vídeo */
+            height: auto;
         }
         .pedido-oracao {
             margin: 20px 0;
@@ -84,7 +85,7 @@
         }
         
         /* Media Queries */
-        @media (max-width: 600px) {
+        @media (max-width: 588px) {
             .menu a {
                 flex: 1 0 100%; /* Botões ocupam 100% da largura em telas pequenas */
                 margin: 5px 0; /* Margens verticais */
@@ -185,7 +186,7 @@
    
     <!-- Espaço para Vídeo -->
     <div class="video-container">
-      <video controls>
+      <video controls autoplay muted>
           <source src="video/grito.mp4" type="video/mp4">
           Seu navegador não suporta o elemento de vídeo.
       </video>
