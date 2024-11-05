@@ -80,7 +80,7 @@ nav ul li a:hover {
 
 .button {
     display: inline-block;
-    padding: 15px 35px;
+    padding: 15px 30px;
     background-color: #e3a319; /* Cor de fundo */
     color: rgb(255, 255, 255); /* Cor do texto */
     text-align: center;
@@ -88,7 +88,7 @@ nav ul li a:hover {
     border-radius: 25px; /* Bordas arredondadas */
     transition: transform 0.1s, background-color 0.3s; /* Transições */
     background-image: url(imagem/botao.jpeg);
-    
+    box-shadow: 0 4px 8px rgb(238, 86, 10); /* Sombra suave */
 }
 .menu {
     display: flex;
