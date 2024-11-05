@@ -1,3 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6d0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(imagem/tela.jpeg);
+}
+
+.welcome-screen {
+    width: 90%;
+    max-width: 400px; /* Limite de largura em telas maiores */
+}
+
+.welcome-screen h1 {
+    color: #e3a319;
+}
+
+.welcome-screen p {
+    margin: 20px 0;
+}
+
+
+.main-screen {
+    display: none;
+    width: 90%;
+    max-width: 600px; /* Limite de largura para a tela principal */
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os itens da navegação em coluna */
+        align-items: center; /* Centraliza os links */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaçamento vertical entre os links */
+    }
+}
+/* Animação do título */
+@keyframes drop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#welcomeTitle {
+    animation: drop 0.8s ease forwards; /* Aplique a animação ao título */
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #e3a319; /* Cor de fundo */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 25px; /* Bordas arredondadas */
+    transition: transform 0.1s, background-color 0.3s; /* Transições */
+    animation: piscar 2s infinite; /* Animação de piscar */
+}
+
+.botao:active {
+    transform: scale(0.95); /* Reduz o tamanho ao clicar */
+    background-color: #000000; /* Cor de fundo ao pressionar */
+    animation: none; /* Remove a animação ao clicar */
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0.5; /* Semi-transparente */
+    }
+}
+
 /* Estilos básicos para toda a página */
 * {
     margin: 0;
@@ -55,12 +174,29 @@ nav ul li a:hover {
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease-in-out;
 }
 
 .slide {
+    min-width: 100%;
+    height: auto;
+}
+
+.slide img {
     width: 100%;
     height: auto;
+}
+
+/* Vídeo */
+#video-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.video-container iframe {
+    max-width: 300px;
+    height: 500px;
+    border-radius: 10px;
 }
 
 /* Botão de pedido de oração */
@@ -91,15 +227,6 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-}
-
-.video-container {
-    margin: 20px 0;
-}
-.video-container video {
-    width: 300px;
-    max-width: 400px; /* Limite máximo para o vídeo */
-    height: auto;
 }
 
 /* Estilos para tornar a página responsiva */

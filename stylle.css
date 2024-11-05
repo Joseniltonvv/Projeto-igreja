@@ -1,0 +1,168 @@
+/* Estilos básicos para toda a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho com botões */
+header {
+    background-color: #9d2020;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    align-items: center;
+    background: #ec8e2a;
+    color: #f0e8e8;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    background-color: rgb(10, 10, 10);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Slideshow */
+#slideshow {
+    position: relative;
+    max-width: 300px;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: auto;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Botões de navegação (setas) */
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Vídeo */
+#video-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.video-container iframe {
+    max-width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* Botão de pedido de oração */
+#pedido-oracao {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.btn-oracao {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #0288d1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-oracao:hover {
+    background-color: #01579b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Estilos para tornar a página responsiva */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .btn-oracao {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
