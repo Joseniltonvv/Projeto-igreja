@@ -7,25 +7,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #ffffff;
     color: #333;
 }
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #9a2017; /* Cor de fundo azul */
+    background-color: #000000; /* Cor de fundo azul */
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    box-shadow: 0 4px 8px rgb(225, 150, 13); /* Sombra suave */
+    box-shadow: 0 4px 8px rgb(168, 8, 8); /* Sombra suave */
 }
 
 header .logo h1 {
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 1px;
+    align-items: center;
 }
 
 /* Navegação */
@@ -129,7 +130,7 @@ button:hover {
 
 .h2 {
 
-    color: #fff;
+    color: #000000;
 
 }
 
@@ -146,7 +147,7 @@ button:hover {
     background-color: #0288d1;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s;
 }
 
@@ -166,15 +167,15 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 1;
+ 
 }
 .menu a {
    
-    padding: 5px 5px;
+    padding: 10px 8px;
     background-color: #000000;
     color: white;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 0px;
     transition: background-color 0.3s;
 }
 .menu a:hover {
