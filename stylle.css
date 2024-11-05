@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #333;
-    background: url(imagem/tela.jpeg);
+    background: #ffffff;
 }
 
 /* Estilos do cabeçalho */
@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgb(168, 8, 8); /* Sombra suave */
+    box-shadow: 0 4px 8px #e46f10;(168, 8, 8); /* Sombra suave */
 }
 
 header .logo h1 {
