@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0 4px 8px rgb(168, 8, 8); /* Sombra suave */
 }
 
@@ -177,6 +177,7 @@ footer {
     text-decoration: none;
     border-radius: 0px;
     transition: background-color 0.3s;
+    margin: 5px;
 }
 .menu a:hover {
     background-color: #d07e0a;
