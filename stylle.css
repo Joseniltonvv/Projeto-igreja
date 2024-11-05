@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgb(168, 8, 8); /* Sombra suave */
 }
 
@@ -167,17 +167,20 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 400px;
  
 }
 .menu a {
    
-    padding: 10px 8px;
+    padding: 0px 10px;
     background-color: #000000;
     color: white;
     text-decoration: none;
     border-radius: 0px;
     transition: background-color 0.3s;
     margin: 5px;
+    box-shadow: 0 4px 8px rgb(168, 8, 8); /* Sombra suave */
+    
 }
 .menu a:hover {
     background-color: #d07e0a;
