@@ -13,13 +13,13 @@ body {
 
 /* Estilos do cabeçalho */
 header {
-    background-color: #0288d1; /* Cor de fundo azul */
+    background-color: #9a2017; /* Cor de fundo azul */
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    box-shadow: 0 4px 8px rgb(225, 150, 13); /* Sombra suave */
 }
 
 header .logo h1 {
@@ -45,10 +45,11 @@ header .logo h1 {
     font-size: 1.2rem;
     font-weight: 500;
     padding: 12px 20px;
-    border-radius: 5px;
-    background-color: #039be5;
+    border-radius: 15px;
+    background-color: #0f1112;
     transition: background-color 0.3s, transform 0.3s;
     text-align: center;
+    
 }
 
 /* Efeito de hover nos botões */
@@ -67,7 +68,7 @@ header .logo h1 {
 /* Slideshow */
 #slideshow {
     position: relative;
-    max-width: 300px;
+    max-width: 400px;
     height: 450px;
     overflow: hidden;
     margin-top: 20px;
