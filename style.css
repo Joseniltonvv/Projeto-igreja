@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #000000e3;
-   background-image: url(imagem/preto.jpeg);
+   background-image: url(imagem/tela2.jpeg);
   
     
 }
@@ -90,10 +90,33 @@ nav ul li a:hover {
     background-image: url(imagem/botao.jpeg);
     
 }
-
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+   
+ 
+}
+.menu a {
+   
+    padding: 0px 10px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+    margin: 5px;
+    box-shadow: 0 4px 8px rgb(136, 10, 10); /* Sombra suave */
+   
+    
+}
+.menu a:hover {
+    background-color: #d07e0a;
+}
 
 footer {
-    background-color: #3c3939;
+    background-color: #000000;
     color: #f8f0f0;
     text-align: center;
     padding: 10px 0;
