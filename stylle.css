@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000000;
     color: #333;
 }
 
@@ -127,6 +127,12 @@ button:hover {
     border-radius: 5px;
 }
 
+.h2 {
+
+    color: #fff;
+
+}
+
 /* Botão de pedido de oração */
 #pedido-oracao {
     display: flex;
@@ -160,15 +166,15 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 15px 0;
+    margin: 10px 1;
 }
 .menu a {
    
-    padding: 10px 5px;
+    padding: 5px 5px;
     background-color: #000000;
     color: white;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 25px;
     transition: background-color 0.3s;
 }
 .menu a:hover {
@@ -212,7 +218,7 @@ footer {
     }
 
     .nav-button {
-        padding: 12px 18px;
+        padding: 12px 15px;
         font-size: 1rem;
     }
 }
