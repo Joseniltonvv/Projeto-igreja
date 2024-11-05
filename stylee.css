@@ -1,119 +1,129 @@
-body {
-    font-family: Arial, sans-serif;
+/* Estilos básicos para toda a página */
+* {
     margin: 0;
     padding: 0;
-    background-color: #6d0a0a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    flex-direction: column;
-    text-align: center;
-    background-image: url(imagem/tela.jpeg);
+    box-sizing: border-box;
 }
 
-.welcome-screen {
-    width: 90%;
-    max-width: 400px; /* Limite de largura em telas maiores */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.welcome-screen h1 {
-    color: #e3a319;
-}
-
-.welcome-screen p {
-    margin: 20px 0;
-}
-
-
-.main-screen {
-    display: none;
-    width: 90%;
-    max-width: 600px; /* Limite de largura para a tela principal */
-}
-
-.hidden {
-    display: none;
-}
-
+/* Cabeçalho com botões */
 header {
-    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-    button {
-        width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+/* Slideshow */
+#slideshow {
+    position: relative;
+    max-width: 300px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+/* Botão de pedido de oração */
+#pedido-oracao {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.btn-oracao {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #0288d1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-oracao:hover {
+    background-color: #01579b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+.video-container video {
+    width: 300px;
+    max-width: 400px; /* Limite máximo para o vídeo */
+    height: auto;
+}
+
+/* Estilos para tornar a página responsiva */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo h1 {
+        font-size: 1.5rem;
     }
 
     nav ul {
-        flex-direction: column; /* Coloca os itens da navegação em coluna */
-        align-items: center; /* Centraliza os links */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     nav ul li {
-        margin: 10px 0; /* Espaçamento vertical entre os links */
+        margin-bottom: 10px;
+    }
+
+    .btn-oracao {
+        font-size: 1rem;
+        padding: 12px 25px;
     }
 }
-/* Animação do título */
-@keyframes drop {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-#welcomeTitle {
-    animation: drop 0.8s ease forwards; /* Aplique a animação ao título */
-}
-
-.botao {
-    display: inline-block;
-    padding: 15px 35px;
-    background-color: #e3a319; /* Cor de fundo */
-    color: rgb(255, 255, 255); /* Cor do texto */
-    text-align: center;
-    text-decoration: none; /* Remove o sublinhado */
-    border-radius: 25px; /* Bordas arredondadas */
-    transition: transform 0.1s, background-color 0.3s; /* Transições */
-    animation: piscar 2s infinite; /* Animação de piscar */
-}
-
-.botao:active {
-    transform: scale(0.95); /* Reduz o tamanho ao clicar */
-    background-color: #000000; /* Cor de fundo ao pressionar */
-    animation: none; /* Remove a animação ao clicar */
-}
-
-@keyframes piscar {
-    0%, 100% {
-        opacity: 1; /* Totalmente visível */
-    }
-    50% {
-        opacity: 0.5; /* Semi-transparente */
-    }
-}
-
