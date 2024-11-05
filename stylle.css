@@ -11,42 +11,58 @@ body {
     color: #333;
 }
 
-/* Cabeçalho com botões */
+/* Estilos do cabeçalho */
 header {
-    background-color: #9d2020;
+    background-color: #0288d1; /* Cor de fundo azul */
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 header .logo h1 {
     font-size: 1.8rem;
-    align-items: center;
-    background: #ec8e2a;
-    color: #f0e8e8;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-nav ul {
+/* Navegação */
+.navbar ul {
     list-style-type: none;
     display: flex;
+    gap: 30px; /* Espaçamento entre os botões */
 }
 
-nav ul li {
-    margin-right: 20px;
-    background-color: rgb(10, 10, 10);
+.navbar ul li {
+    position: relative;
 }
 
-nav ul li a {
+.nav-button {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #039be5;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* Efeito de hover nos botões */
+.nav-button:hover {
+    background-color: #0277bd;
+    transform: translateY(-3px); /* Efeito de elevação */
 }
+
+/* Efeito de foco nos botões (quando clicados ou selecionados) */
+.nav-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.7);
+}
+
 
 /* Slideshow */
 #slideshow {
@@ -164,5 +180,23 @@ footer {
     .btn-oracao {
         font-size: 1rem;
         padding: 12px 25px;
+    }
+}
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px; /* Menos espaço entre os botões em telas pequenas */
+    }
+
+    .nav-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
     }
 }
