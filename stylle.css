@@ -124,7 +124,7 @@ button:hover {
 .video-container iframe {
     max-width: 400px;
     height: 400px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* Botão de pedido de oração */
@@ -156,7 +156,24 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
-
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.menu a {
+    margin: 1px;
+    padding: 10px 5px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+.menu a:hover {
+    background-color: #d07e0a;
+}
 /* Estilos para tornar a página responsiva */
 @media (max-width: 768px) {
     header {
