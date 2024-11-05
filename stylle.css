@@ -123,7 +123,7 @@ button:hover {
 }
 
 .video-container iframe {
-    max-width: 400px;
+    max-width: 380px;
     height: 400px;
     border-radius: 5px;
 }
@@ -167,7 +167,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 400px;
+   
  
 }
 .menu a {
